@@ -1,0 +1,13 @@
+model:
+  name: mnist_model
+  path: models/mnist_model.pt
+  onnx_path: models/mnist_model.onnx
+  version: v1
+
+benchmark:
+  max_latency_ms: 10
+  min_accuracy: 0.95
+
+deployment:
+  git_repo: https://github.com/shinshawcs/mnist_model_pipeline.git
+  pr_branch: dev-mnist-model
